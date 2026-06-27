@@ -36,6 +36,6 @@ O desafio foi um tanto quanto elevado relacionado ao meu conhecimento atual nas 
 1. Certifique-se de ter o **Node.js** instalado na sua máquina.
 2. Clone este repositório.
 3. Abra o terminal na pasta do projeto e instale as dependências:
-   npm install
-   npm run dev 
-   abra o local host no navegador 
+   > npm install
+   > npm run dev 
+   > abra o local host no navegador 
