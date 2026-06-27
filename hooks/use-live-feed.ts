@@ -7,8 +7,6 @@ export function useLiveFeed() {
 
   // 2. O useEffect executa essa lógica assim que a aplicação inicia
   useEffect(function inicializarSistema() {
-    
-    // Função simples para instanciar um novo objeto Cliente
     function criarClienteFalso() {
       const numeroAleatorio = Math.floor(Math.random() * 1000);
       
@@ -26,16 +24,13 @@ export function useLiveFeed() {
       });
     }
 
-    // 3. Cria um loop (Thread em background) que roda a cada 3 segundos
+    // 3. Cria um loop (Thread em background) que roda a cada 30 segundos
     const temporizador = setInterval(criarClienteFalso, 30000);
-
-    // 4. Se a tela for fechada, o sistema destrói o temporizador para não vazar memória
     return function limparMemoria() {
       clearInterval(temporizador);
     };
 
-  }, []); // Estes colchetes vazios significam: "Rode apenas 1 vez no início"
+  }, []); 
 
-  // 5. Retorna a lista preenchida para a tela usar
   return { clientes };
 }

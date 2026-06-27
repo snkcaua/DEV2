@@ -3,7 +3,7 @@ import { useLiveFeed } from './hooks/use-live-feed';
 import { TabelaClientes } from './componentes/tabela-clientes/tabela-clientes';
 
 export function App() {
-  // Instancia o hook que gera um cliente novo a cada 3 segundos
+  // Instancia o hook que gera um cliente novo a cada 30 segundos
   const { clientes } = useLiveFeed();
 
   return (
